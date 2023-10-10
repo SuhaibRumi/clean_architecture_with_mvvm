@@ -1,6 +1,8 @@
 
+import 'package:clean_architecture_with_mvvm/src/utils/routes_name.dart';
 import 'package:flutter/material.dart';
-import 'src/view/home_screen.dart';
+import 'src/utils/routes.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +17,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-       
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      initialRoute: RoutesName.login,
+      onGenerateRoute: Routes.genrateRoute,
     );
   }
 }
