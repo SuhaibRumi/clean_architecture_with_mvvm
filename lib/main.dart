@@ -1,10 +1,9 @@
-
-import 'package:clean_architecture_with_mvvm/src/utils/routes_name.dart';
+import '../src/utils/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'src/utils/routes.dart';
 
-
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -25,4 +24,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
